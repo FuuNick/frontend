@@ -9,9 +9,8 @@ const Menus = ({ menu, masukKeranjang }) => {
         <Card.Img
           style={{ cursor: "pointer" }}
           variant="top"
-          src={`/assets/images/${menu.category.nama.toLowerCase()}/${menu.gambar}`}
         />
-        <Card.Body>
+        <Card.Body style={ { cursor: "pointer" } }>
           <Card.Title>{menu.nama}</Card.Title>
           <Card.Text>Rp {numberWithCommas(menu.harga)}</Card.Text>
         </Card.Body>
