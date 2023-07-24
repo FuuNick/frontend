@@ -9,12 +9,7 @@ const Menus = ({ menu, masukKeranjang }) => {
         <Card.Img
           style={{ cursor: "pointer" }}
           variant="top"
-          src={
-            "assets/images/" +
-            menu.category.nama.toLowerCase() +
-            "/" +
-            menu.gambar
-          }
+          src={`/assets/images/${menu.category.nama.toLowerCase()}/${menu.gambar}`}
         />
         <Card.Body>
           <Card.Title>{menu.nama}</Card.Title>
