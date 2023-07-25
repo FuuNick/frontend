@@ -24,7 +24,7 @@ const ListPesanan = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`${API_URL}/pesanans`);
+      const response = await axios.get(`${API_URL}pesanans`);
       setPesanans(response.data);
     } catch (error) {
       console.error(error);
@@ -33,7 +33,7 @@ const ListPesanan = () => {
 
   const handlePesananSelesai = async (pesananId) => {
     try {
-      await axios.delete(`${API_URL}/pesanans/${pesananId}`);
+      await axios.delete(`${API_URL}pesanans/${pesananId}`);
       fetchData();
     } catch (error) {
       console.error(error);
